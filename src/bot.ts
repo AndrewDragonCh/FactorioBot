@@ -1,6 +1,6 @@
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { getOnlinePlayers } from './rconClient';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });

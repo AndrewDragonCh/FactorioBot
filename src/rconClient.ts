@@ -1,5 +1,5 @@
 import { RCONClient } from 'tsrcon-client';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 const rcon = new RCONClient(
