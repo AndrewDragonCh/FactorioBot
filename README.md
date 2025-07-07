@@ -2,7 +2,11 @@
 
 A basic Discord Bot that sets its presense to the number of players online and their Factorio usernames.
 
-![Example Screenshot](.github/assets/example.png)
+![Example Screenshot w/o Players](.github/assets/noplayers.png)
+> *Example showing no players online*
+
+![Example Screenshot w/ Players (soon)](.github/assets/players.png)
+> *Example showing 1 player online*
 
 Best used on Vanilla plays where you want achievements to let players know whos online without opening the game.
 

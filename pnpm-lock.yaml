@@ -15,8 +15,8 @@ importers:
         specifier: 17.0.1
         version: 17.0.1
       tsrcon-client:
-        specifier: 1.0.2
-        version: 1.0.2
+        specifier: 1.0.3
+        version: 1.0.3
     devDependencies:
       '@types/node':
         specifier: 24.0.10
@@ -278,8 +278,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsrcon-client@1.0.2:
-    resolution: {integrity: sha512-iQe7uoonIaCiP0kcqBj00hRf+GP5YXA0ltVmK7LP5cNt06Fh2n11cIOvtWkQSDRkVjXNC8S0aUKnMwW2OaHthw==}
+  tsrcon-client@1.0.3:
+    resolution: {integrity: sha512-UNvIMLP3XAbXuV55x67rr1Uxt3rrNotyfBrtRp79fJcDl+2GQzFZJs2P70IdNtAUOjrGdWLR5gVDFhzHSJ5gHg==}
 
   tsx@4.20.3:
     resolution: {integrity: sha512-qjbnuR9Tr+FJOMBqJCW5ehvIo/buZq7vH7qD7JziU98h6l3qGy0a/yPFjwO+y0/T7GFpNgNAvEcPPVfyT8rrPQ==}
@@ -527,7 +527,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsrcon-client@1.0.2:
+  tsrcon-client@1.0.3:
     dependencies:
       net: 1.0.2
 

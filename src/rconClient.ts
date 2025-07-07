@@ -18,6 +18,8 @@ export async function getOnlinePlayers(): Promise<{ count: number; players: stri
 
     const result = await rcon.sendCommand('/p o');
 
+    rcon.disconnect();
+
     const match = result.match(/Online players \((\d+)\): ?(.*)/);
 
     if (match) {
