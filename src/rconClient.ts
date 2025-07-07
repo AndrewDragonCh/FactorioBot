@@ -1,6 +1,4 @@
 import { RCONClient } from 'tsrcon-client';
-import * as dotenv from 'dotenv';
-dotenv.config();
 
 const rcon = new RCONClient(
   process.env.RCON_HOST!,
