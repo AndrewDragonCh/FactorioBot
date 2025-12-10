@@ -4,18 +4,17 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/bot.js",
-    "dev": "tsx watch src/bot.ts"
+    "start": "bun src/bot.ts",
+    "dev": "bun --watch src/bot.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.4",
   "devDependencies": {
     "@types/node": "24.0.10",
     "tsx": "4.20.3",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "@types/bun": "latest"
   },
   "dependencies": {
     "discord.js": "14.21.0",
