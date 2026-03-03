@@ -1,9 +1,9 @@
 import { RCONClient } from 'tsrcon-client';
 
 const rcon = new RCONClient(
-  process.env.RCON_HOST!,
-  Number(process.env.RCON_PORT!),
-  process.env.RCON_PASSWORD!,
+  Bun.env.RCON_HOST!,
+  Number(Bun.env.RCON_PORT!),
+  Bun.env.RCON_PASSWORD!,
   {
     timeout: 3000,
     retries: 1,

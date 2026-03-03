@@ -10,15 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "discord.js": "14.21.0",
+    "tsrcon-client": "1.0.3"
+  },
   "devDependencies": {
     "@types/node": "24.0.10",
     "tsx": "4.20.3",
-    "typescript": "5.8.3",
-    "@types/bun": "latest"
-  },
-  "dependencies": {
-    "discord.js": "14.21.0",
-    "dotenv": "17.0.1",
-    "tsrcon-client": "1.0.3"
+    "typescript": "5.8.3"
   }
 }

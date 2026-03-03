@@ -1,7 +1,5 @@
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { getOnlinePlayers } from './rconClient';
-import * as dotenv from 'dotenv';
-dotenv.config({quiet: true});
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -28,4 +26,4 @@ client.once('ready', async () => {
   setInterval(updateStatus, 60_000);
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(Bun.env.DISCORD_TOKEN);
