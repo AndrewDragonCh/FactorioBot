@@ -13,13 +13,13 @@ Best used on Vanilla plays where you want achievements to let players know whos 
 ## Install Instuctions
 
 1. Download the latest release from GitHub
-2. [Install Node.JS v24 and pnpm](https://nodejs.org/en/download/current)
-3. Install packages using `pnpm i`
+2. [Install Node.JS v24 and Bun](https://nodejs.org/en/download/current)
+3. Install packages using `bun i`
 4. Copy and rename .env.example to .env and fill it out
    * [Create a discord bot here](http://discord.com/developers/applications)
    * [Add the RCON command parameters to your Factorio Server's startup command](https://wiki.factorio.com/Command_line_parameters)
-5. Build the bot using `pnpm build`
-6. Run the bot using `pnpm start`
+5. Build the bot using `bun build`
+6. Run the bot using `bun start`
 
 I'd recommend using a process manager like PM2 to manage the deployment. [Learn more about PM2 here](https://pm2.keymetrics.io/)
 
@@ -28,9 +28,9 @@ I'd recommend using a process manager like PM2 to manage the deployment. [Learn 
 Uses Node 22 and pnpm
 
 1. Fork and clone the Repo
-2. Install the packages using `pnpm i`
+2. Install the packages using `bun i`
 3. Copy and rename .env.example to .env and fill it out
-4. Use `pnpm dev` to run the bot
+4. Use `bun dev` to run the bot
 
 ### License
 
