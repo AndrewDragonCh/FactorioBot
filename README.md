@@ -19,7 +19,7 @@ Best used on Vanilla plays where you want achievements to let players know whos 
 
 1. Copy `compose.yaml` & `.env.example` to a folder on your Docker host.
 2. Rename `.env.example` to `.env` and fill it out
-3. Run `docker compose up -d` which will run the container
+3. Run `docker compose up -d` to start the container
 
 #### Docker Packages
 
@@ -27,7 +27,7 @@ Docker Packages are hosted on my local [Forgejo instance](https://git.andrewstil
 
 ### Standalone
 
-Docker Packages are hosted on my local [Forgejo instance](https://git.andrewstill.cloud). 
+Docker Packages are hosted on my local [Forgejo instance](https://git.andrewstill.cloud).
 
 1. Download the latest release from GitHub
 2. [Install Node.JS v24 and PNPM](https://nodejs.org/en/download/current)
@@ -40,7 +40,7 @@ I'd recommend using a process manager like PM2 to manage the deployment. [Learn 
 
 ### Development
 
-Most development happens on my local [Forgejo instance](https://git.andrewstill.cloud). 
+Most development happens on my local [Forgejo instance](https://git.andrewstill.cloud).
 
 Uses Node 24 and pnpm
 
@@ -51,4 +51,4 @@ Uses Node 24 and pnpm
 
 ### License
 
-License is the ISC and can be used according to the terms of the lincense.
+This project is licensed under the  [ISC License](https://github.com/AndrewDragonCh/FactorioBot/blob/main/LICENSE). The ISC license is functionally equivalent to MIT license with some unnecessary bits removed.
