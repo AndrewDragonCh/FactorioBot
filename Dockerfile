@@ -1,17 +1,34 @@
-FROM node:22-slim
-
-ENV NODE_ENV=production
-
-RUN corepack enable && corepack prepare pnpm@latest --activate
+FROM node:24-slim AS build
 
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN --mount=type=cache,id=pnpm-store,target=/root/.local/share/pnpm/store \
-    pnpm install --frozen-lockfile --prod
+RUN corepack enable
 
-COPY . .
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+
+RUN corepack prepare pnpm@latest --activate \
+    && pnpm install --frozen-lockfile
+
+COPY tsconfig.json ./
+COPY src ./src
 
 RUN pnpm run build
 
-CMD ["pnpm", "start"]
+FROM node:24-slim AS production
+
+ENV NODE_ENV=production
+
+WORKDIR /app
+
+RUN corepack enable \
+    && corepack prepare pnpm@latest --activate
+
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+
+RUN pnpm install --frozen-lockfile --prod
+
+COPY --from=build /app/dist ./dist
+
+USER node
+
+CMD ["node", "dist/bot.js"]

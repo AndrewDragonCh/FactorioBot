@@ -1,0 +1,7 @@
+services:
+  factorio-bot:
+    image: ascr.io/andrewdragon/factoriobot:main
+    container_name: factoriobot
+    restart: unless-stopped
+    env_file:
+      - .env

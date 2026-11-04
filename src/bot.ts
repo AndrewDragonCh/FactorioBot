@@ -1,6 +1,8 @@
 import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 import { getOnlinePlayers } from './rconClient';
-process.loadEnvFile()
+if (process.env.NODE_ENV !== 'production') {
+    process.loadEnvFile();
+}
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 

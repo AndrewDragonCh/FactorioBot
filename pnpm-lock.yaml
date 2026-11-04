@@ -8,22 +8,22 @@ importers:
 
   .:
     dependencies:
-      '@types/node':
-        specifier: 26.6.6
-        version: 26.6.6
       discord.js:
         specifier: 14.28.1
         version: 14.28.1
       tsrcon-client:
         specifier: 1.3.0
         version: 1.3.0
-      typescript:
-        specifier: 7.0.2
-        version: 7.0.2
     devDependencies:
+      '@types/node':
+        specifier: 26.6.6
+        version: 26.6.6
       tsx:
         specifier: 4.23.15
         version: 4.23.15
+      typescript:
+        specifier: 7.0.2
+        version: 7.0.2
 
 packages:
 
