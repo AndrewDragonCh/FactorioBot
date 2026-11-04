@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "bun src/bot.ts",
+    "build": "tsc",
+    "start": "node dist/bot.js",
     "dev": "tsx --watch src/bot.ts"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@types/node": "26.6.6",
-    "tsx": "4.23.15",
+    "discord.js": "14.28.1",
+    "tsrcon-client": "1.3.0",
     "typescript": "7.0.2"
   },
-  "dependencies": {
-    "discord.js": "14.28.1",
-    "tsrcon-client": "1.3.0"
+  "devDependencies": {
+    "tsx": "4.23.15"
   }
 }
