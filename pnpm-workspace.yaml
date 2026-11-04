@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: false
+minimumReleaseAgeExclude:
+  - discord.js@14.28.1
+  - tsrcon-client@1.2.1 || 1.3.0
