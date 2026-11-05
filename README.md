@@ -3,7 +3,7 @@
 A basic Discord Bot that sets its presense to the number of players online and their Factorio usernames.
 
 | ![Example Screenshot w/o Players](.forgejo/assets/noplayers.png) | ![Example Screenshot w/ One Player (soon)](.forgejo/assets/player.png) | ![Example Screenshot w/ Multiple Players](.forgejo/assets/players.png) |
-| -- | -- | -- |
+| - | - | - |
 | *Example showing no players online* | *Example showing 1 player online* | *Example showing mutiple player online* |
 
 Best used on Vanilla plays where you want achievements to let players know whos online without opening the game.
@@ -13,6 +13,7 @@ Best used on Vanilla plays where you want achievements to let players know whos 
 ### Prerequisites
 
 * Discord Bot - [Create a discord bot here](http://discord.com/developers/applications)
+  > I've included the icon I used [in this repo](.forgejo/assets/factorio.png)
 * Factorio Server with RCON Enabled - [Read about the Startup Parameters here](https://wiki.factorio.com/Command_line_parameters#Multiplayer:~:text=gamepad(controller)%20support-,Server%20options,-%2D%2Dport)
 
 ### Docker (recommended)
