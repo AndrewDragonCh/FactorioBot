@@ -13,7 +13,7 @@ Best used on Vanilla plays where you want achievements to let players know whos 
 ### Prerequisites
 
 * Discord Bot - [Create a discord bot here](http://discord.com/developers/applications)
-  > I've included the icon I used [in this repo](.forgejo/assets/factorio.png)
+  > I've included the icon I used [in this repo](.forgejo/assets/factorio.png) (Inluding a gif!)
 * Factorio Server with RCON Enabled - [Read about the Startup Parameters here](https://wiki.factorio.com/Command_line_parameters#Multiplayer:~:text=gamepad(controller)%20support-,Server%20options,-%2D%2Dport)
 
 ### Docker (recommended)
